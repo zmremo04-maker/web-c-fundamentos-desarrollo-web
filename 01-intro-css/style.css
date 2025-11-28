@@ -1,0 +1,32 @@
+/* Selector general, univeersal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Selector etiqueta */
+body{
+    background-color: #232323;
+    color: #fff;
+}
+
+.btn{
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+#social-icons{
+    background-color: rgba(255, 68, 0, 0.502);
+}
+
+
+#social-icons .btn{
+    border-radius: 18px;
+}
+
+/* pseudoclase */
+.btn:hover{
+    background-color: blueviolet;
+    color: #232323;
+}
