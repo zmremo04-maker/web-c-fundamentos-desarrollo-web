@@ -1,17 +1,18 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+body{
   background-color: lightgray;
 }
 
-.contenedor-flexible {
-  display: flex;
+.contenedor-flexible{
+
+  display: flex; 
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content:flex-start;
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: nowrap;
@@ -24,7 +25,7 @@ body {
   color: white;
 }
 
-.boxy {
+.boxy{
   width: 50%;
   height: 80px;
   background-color: orange;
@@ -33,10 +34,8 @@ body {
 }
 
 /* Estilos del card */
-img {
-  display: flex;
-}
-.card {
+img{display: flex;}
+.card{
   display: flex;
   background-color: #fff;
   border-radius: 10px;
@@ -44,7 +43,7 @@ img {
   margin: auto;
   overflow: hidden;
 }
-.card-content {
+.card-content{
   color: rgb(94, 104, 99);
   font-family: sans-serif;
   display: flex;
@@ -53,17 +52,17 @@ img {
   padding: 0 30px;
   gap: 15px;
 }
-.card-content h2 {
+.card-content h2{
   font-size: 1.3rem;
 }
-.card-content p {
+.card-content p{
   font-size: 0.8rem;
 }
-.card-user-info {
+.card-user-info{
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.card-user-info img {
+.card-user-info img{
   border-radius: 50%;
 }
