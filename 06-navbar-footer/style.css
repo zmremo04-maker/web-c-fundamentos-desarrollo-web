@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Clon de Starbucks */
+header{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+nav{
+  display: flex;
+  gap: 15px;
+}
+
+.header-left nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition-duration: .8s;
+}
+.header-left nav a:hover{
+  color: #00754a;
+}
+
+.header-right{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.locacion a{
+  text-decoration: none;
+  color: black;
+  transition-duration: .8s;
+}
+.locacion a:hover{
+  color: #00754a;
+}
+
+.btn-registro{
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-iniciar{
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Banner */
+.banner{
+  display: flex;
+  width: 100%;
+  max-width: 1250px;
+  border-radius: 15px;
+  margin: 50px auto;
+  /* overflow: hidden; */
+/*   background-color: orange; */
+}
+
+.banner-info, .banner-image{
+  /* flex-grow: 1; */
+  width: 50%;
+}
+
+.banner-info{
+  padding: 100px 0 100px 30px;
+  background-color: #1e3932;
+  color: white;
+  border-radius: 18px 0 0 18px;
+}
+.banner-info a{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.banner-image{
+  position: relative;
+  background-image: url('https://cdn.pixabay.com/photo/2019/09/04/20/34/field-4452538_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 18px 18px 0;
+}
+.banner-image .malteada{
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 250px;
+}
+.fresa{
+  position: absolute;
+  width: 90px;
+  right: 11%;
+  top: 3%;
+  transform: rotate(28deg);
+}
+.galleta{
+  position: absolute;
+  width: 150px;
+  bottom: 0%;
+  right: 0%;
+  z-index: 1;
+}
+
+
+/* Footer */
+
+.footer-container{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  max-width: 1300px;
+  gap: 40px;
+  margin: auto;
+}
+
+footer{
+  background-color: #1e3932;
+  color: white;
+  padding: 50px 0;
+}
+footer a{
+  color: rgba(255, 255, 255, 0.712);
+  text-decoration: none;
+  transition-duration: .4s;
+}
+footer a:hover{
+  color: white;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3{
+  margin-bottom: 30px;
+}
+
+
+/* Práctica conceptos */
+
+.contenedor-flexible {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  background-color: blueviolet;
+  border: 2px solid black;
+  width: 600px;
+  height: 500px;
+  color: white;
+}
+
+.boxy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 50%; */
+  height: 80px;
+  background-color: orange;
+  border: 2px solid black;
+  font-size: 1.5rem;
+}
+
+.pato {
+  align-self: auto;
+  width: 50px;
+  width: 40%;
+}
+.foca {
+  align-self: auto;
+  width: 40%;
+  flex-shrink: 4;
+}
+/* .perro {
+  align-self: auto;
+  flex-grow: 1;
+} */
+.vaca {
+  align-self: auto;
+  width: 40%;
+}
